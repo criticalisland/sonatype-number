@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="TestNG Load Testing Suite" verbose ="1">
+<parameter name="url-param" value="http://console.numtoword.dice.red/numtoword-mvc-dash/" />
+ <test name="Selenium Load Test">
+  <classes>
+   <class name="com.sonatype.console.selenium.LoadTestScenario" />
+  </classes>
+ </test> <!-- Test -->
+</suite> <!-- Suite -->

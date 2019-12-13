@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [TestNG Load Testing Suite]" parallel="none">
+  <parameter name="url-param" value="http://console.numtoword.dice.red/numtoword-mvc-dash/"/>
+  <test name="Selenium Load Test">
+    <classes>
+      <class name="com.sonatype.console.selenium.LoadTestScenario"/>
+    </classes>
+  </test> <!-- Selenium Load Test -->
+  <test name="Selenium Load Test(failed)" parallel="none">
+    <classes>
+      <class name="com.sonatype.console.selenium.LoadTestScenario">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="testcase0"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.sonatype.console.selenium.LoadTestScenario -->
+    </classes>
+  </test> <!-- Selenium Load Test(failed) -->
+</suite> <!-- Failed suite [TestNG Load Testing Suite] -->
