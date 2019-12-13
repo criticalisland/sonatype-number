@@ -4,7 +4,6 @@ public class Word {
 
 	private String numberInputStr;
 	private String words;
-	private String instanceName;
 
 	public Word() {	
 	}
@@ -25,19 +24,11 @@ public class Word {
 		this.words = words;
 	}
 
-	public String getInstanceName() {
-		return instanceName;
-	}
-
-	public void setInstanceName(String instanceName) {
-		this.instanceName = instanceName;
-	}
 
 	
 	
 	@Override
 	public String toString() {
-		return "{" + "\"number\"=\"" + numberInputStr + "\", \"words\"=\"" + words + "\"" + ", \"instaneName\"=\""
-				+ instanceName + "\"}";
+		return "{" + "\"number\"=\"" + numberInputStr + "\", \"words\"=\"" + words + "\"}";
 	}
 }
